@@ -21,10 +21,15 @@
     </nav>
 
     <!-- center section -->
-    <img id="image" src="http://www.placehold.it/600x250"> <!-- placeholder for img header -->
-    <img id="stage" src="http://www.placehold.it/600x250"> <!-- placeholder for stage img -->
+    <div>
+      <img id="image" src="http://www.placehold.it/600x250"> <!-- placeholder for img header -->
+    </div>
+    <br / > <!-- this is garbage, just a placeholder until you work your CSS magic :) -->
+    <div>
+      <img id="stage" src="http://www.placehold.it/600x250"> <!-- placeholder for stage img -->
+    </div>
 
-    <div class="allseats">
+    <div class="allSeats">
       <div class="seats left" id="seat1"></div>
       <div class="seats" id="seat2"></div>
       <div class="seats" id="seat3"></div>
@@ -52,9 +57,11 @@
     </div>
 
     <form id="form">
-      <input id="name"></input>
-      <input id="creditCard"></input>
-      <input id="submit"></input>
+      <label for="name">Name: </label>
+      <input id="name" name="name" type="text"></input>
+      <label for="creditCard">Credit Card: </label>
+      <input id="creditCard" name="creditCard" type="number"></input>
+      <input id="submit" name="submit" type="submit" onclick="submitFunction() return: false"></input>
     </form>
 
     <!-- right section -->
