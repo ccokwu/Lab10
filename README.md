@@ -1,6 +1,16 @@
 # Lab10
 lab 10 with benson, langner and okwu
 
+DONEish
+=======
++ Link in Bootstrap to HTML, which includes jQuery
++ Create 24 boxes in HTML
++ added styles for red / blue / yellow boxes to reflect status
++ basic HTML form layout w/ submit button that triggers a function
+
+
+
+
 TODAY
 =====
 
@@ -16,9 +26,10 @@ Benson is working on
 + HTML / Bootstrap
 
 
-// create a master list of CSS classes and IDs for all elements
+// List of CSS classes and IDs for all elements
 
-div class = "seats"
+div class = "allSeats"
+div class = "seats" (applied to each individual seat)
 
     id = "seat1"
     id = "seat2"
@@ -43,31 +54,10 @@ h1 id = "title"
 img id = "image"
     id = "stage"
 
-
-
-
-
-// Link in Bootstrap to HTML, which includes jQuery
-
-// Create 24 boxes in HTML
-
-// Style 24 boxes in CSS
-
-+ red class to designate taken
-+ blue class to designate available
-+ yellow to designate current selection
-
-
 // Use jQuery hover state
 + when hovering over a red seat, display a message saying the seat is taken
 + when hovering over a blue seat, turn the seat yellow (toggle?)
 + when clicking the yellow seat to select, make the form appear
-
-// build the user input form in HTML
-+ name input field
-+ credit card input field
-+ prepopulate the seat assignment in the form
-+ submit button that triggers a function -- this function will create an object that represents the user
 
 
 // in jQuery, write a function to create a user object from the form input

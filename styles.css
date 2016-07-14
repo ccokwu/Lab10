@@ -14,26 +14,25 @@ body {
 }
 /*our h1 title of page*/
 #title {
-  font-family: Courier;  /* use @ font*/
+  font-family: 'Tillana', Courier;
   color: #ff1010;
   text-shadow: 2px 1px 1px black;
   text-align: center;
 }
 /*image above the stage*/
 #image {
-  margin: center;
+  margin: 0 33%;
 }
 #stage {
   background-color: black;
   border-radius: 0px 0px 15px 15px;
   width: 300px;
   height: 75px;
-  margin: auto;
+  margin: -5% 33% 0 33%;
 }
 /*this contains all the seats*/
 .allSeats {
-  float: left;
-  width: 500px;
+
 }
 /*styling for all 24 seats*/
 /*seats 2-5, 8-11, 14-17, and 20-23 are in the middle section*/
@@ -43,12 +42,15 @@ div.seats {
   width: 30px;
   height: 30px;
   background-color: blue;
-} 
+}
+div.seats:hover {
+  background-color: yellow;
+}
+
 /*the seats on the left that begin closer to the stage*/
 /*includes 1, 7, 13, 19*/
 div.left {
-  position: absolute;
-  float: left;
+
 }
 /*the seats on the right that begin closer to the stage*/
 /*includes 6, 12, 18, 24*/
@@ -68,25 +70,9 @@ div.selected {
 }
 
 /*beginning of form styling*/
-#form {
+form {
 
 }
-
-#name, #creditCard {
-  float: left;
-  width: 200px;
-  text-align: right;
-  padding-right: 10px;
-}
-
-#creditCard {
-
-}
-
-/*form {
-  margin: 20px;
-  padding-bottom: 10px;
-}*/
 
 #submit {
   padding: 2px 5px;
@@ -112,7 +98,7 @@ div.selected {
 #key {
 }
 #instructions {
-  float: right;
+
 }
 #tinyTaken {
   width: 5px;
