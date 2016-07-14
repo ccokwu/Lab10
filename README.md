@@ -15,7 +15,7 @@ Charlie is working on
 
 Benson is working on
 
-+ adding instructions / key / footer
++ adding <s>instructions</s> / key / footer
 + some jQuery -- create user object after filling out form
 
 
