@@ -4,6 +4,18 @@ lab 10 with benson, langner and okwu
 TODAY
 =====
 
+Karen is working on
++ CSS
+
+Charlie is working on
+
++ jQuery
+
+Benson is working on
+
++ HTML / Bootstrap
+
+
 // create a master list of CSS classes and IDs for all elements
 
 div class = "seats"
