@@ -5,6 +5,8 @@
 /*navigation*/
 nav {
   background-color: #96b5c7;
+/*get rid of bullets on list*/
+
 }
 
 body {
@@ -12,22 +14,29 @@ body {
 }
 /*our h1 title of page*/
 #title {
-  font-family: Courier;  // use @ font
+  font-family: Courier;  /* use @ font*/
   color: #ff1010;
+  text-shadow: 2px 1px 1px black;
+  text-align: center;
 }
 /*image above the stage*/
 #image {
-
+  margin: center;
 }
 #stage {
   background-color: black;
+  border-radius: 0px 0px 15px 15px;
+  width: 300px;
+  height: 75px;
+  margin: auto;
 }
 /*this contains all the seats*/
 .allSeats {
-
+  margin: auto;
 }
 /*styling for all 24 seats*/
 div.seats {
+  display: inline-block;
   margin: 2px;
   width: 30px;
   height: 30px;
@@ -35,7 +44,8 @@ div.seats {
 } 
 /*the seats on the left that begin closer to the stage*/
 div.left {
-
+  position: absolute;
+  float: left;
 }
 /*the seats on the right that begin closer to the stage*/
 div.right {
