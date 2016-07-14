@@ -1,58 +1,26 @@
 # Lab10
 lab 10 with benson, langner and okwu
 
-DONEish
+Tonight
 =======
-+ Link in Bootstrap to HTML, which includes jQuery
-+ Create 24 boxes in HTML
-+ added styles for red / blue / yellow boxes to reflect status
-+ basic HTML form layout w/ submit button that triggers a function
-
-
-
-
-TODAY
-=====
 
 Karen is working on
-+ CSS
++ show and hide the form using jQuery when an available seat is selected
++ set some of the seats to default as taken class using jQuery
 
 Charlie is working on
 
-+ jQuery
++ visual design -- using CSS to make it look pretty
++ find curtains and add
 
 Benson is working on
 
-+ HTML / Bootstrap
++ adding instructions / key / footer
++ some jQuery -- create user object after filling out form
 
 
-// List of CSS classes and IDs for all elements
 
-div class = "allSeats"
-div class = "seats" (applied to each individual seat)
 
-    id = "seat1"
-    id = "seat2"
-    ...
-    id = "seat24"
-
-seat class = "taken"
-     class = "available"
-     class = "selected"
-
-form id = "form"
-
-input id = "name"
-      id = "creditCard"
-      id = "submit"
-
-p/div id = "confirmation"
-  div id = "key"
-
-h1 id = "title"
-
-img id = "image"
-    id = "stage"
 
 // Use jQuery hover state
 + when hovering over a red seat, display a message saying the seat is taken
@@ -82,3 +50,40 @@ BONUS
 + display user info on hover
 
 + refactor code / DRY
+
+
+DONEish
+=======
++ Link in Bootstrap to HTML, which includes jQuery
++ Create 24 boxes in HTML
++ added styles for red / blue / yellow boxes to reflect status
++ basic HTML form layout w/ submit button that triggers a function
+
+
+// List of CSS classes and IDs for all elements
+
+div class = "allSeats"
+div class = "seats" (applied to each individual seat)
+
+    id = "seat1"
+    id = "seat2"
+    ...
+    id = "seat24"
+
+seat class = "taken"
+     class = "available"
+     class = "selected"
+
+form id = "form"
+
+input id = "name"
+      id = "creditCard"
+      id = "submit"
+
+p/div id = "confirmation"
+  div id = "key"
+
+h1 id = "title"
+
+img id = "image"
+    id = "stage"
