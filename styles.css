@@ -32,9 +32,11 @@ body {
 }
 /*this contains all the seats*/
 .allSeats {
-  margin: auto;
+  float: left;
+  width: 500px;
 }
 /*styling for all 24 seats*/
+/*seats 2-5, 8-11, 14-17, and 20-23 are in the middle section*/
 div.seats {
   display: inline-block;
   margin: 2px;
@@ -43,11 +45,13 @@ div.seats {
   background-color: blue;
 } 
 /*the seats on the left that begin closer to the stage*/
+/*includes 1, 7, 13, 19*/
 div.left {
   position: absolute;
   float: left;
 }
 /*the seats on the right that begin closer to the stage*/
+/*includes 6, 12, 18, 24*/
 div.right {
 
 }
@@ -106,7 +110,9 @@ div.selected {
 
 /*key code for the seating map includes 3 tiny boxes and descriptions*/
 #key {
-
+}
+#instructions {
+  float: right;
 }
 #tinyTaken {
   width: 5px;
