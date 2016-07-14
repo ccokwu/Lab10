@@ -1,0 +1,111 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+/*navigation*/
+nav {
+  background-color: #96b5c7;
+}
+
+body {
+ background-color: #b4b0ba;
+}
+/*our h1 title of page*/
+#title {
+  font-family: Courier;  // use @ font
+  color: #ff1010;
+}
+/*image above the stage*/
+#image {
+
+}
+#stage {
+  background-color: black;
+}
+/*this contains all the seats*/
+.allSeats {
+
+}
+/*styling for all 24 seats*/
+div.seats {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+} 
+/*the seats on the left that begin closer to the stage*/
+div.left {
+
+}
+/*the seats on the right that begin closer to the stage*/
+div.right {
+
+}
+div.taken {
+  background-color: red;
+}
+
+div.available {
+  background-color: blue;
+}
+
+div.selected {
+  background-color: yellow;
+}
+
+/*beginning of form styling*/
+#form {
+
+}
+
+#name, #creditCard {
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#creditCard {
+
+}
+
+/*form {
+  margin: 20px;
+  padding-bottom: 10px;
+}*/
+
+#submit {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #f6cc2e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 2px ridge;
+}
+
+#submit:hover {
+  opacity: .8;
+}
+/*end of form styling*/
+
+/*confirmation (div?) after clicking submit on form*/
+#confirmation {
+
+}
+
+/*key code for the seating map includes 3 tiny boxes and descriptions*/
+#key {
+
+}
+#tinyTaken {
+  width: 5px;
+  height: 5px;
+}
+#tinyAvailable {
+  width: 5px;
+  width: 5px;
+}
+#tinySelected {
+  width: 5px;
+  width: 5px;
+}
