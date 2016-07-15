@@ -19,6 +19,7 @@ $( ".taken" ).hover(function() {
   // })
 
   var $selectedSeat;
+  var $selectedDiv;
 
   var $seats = $(".seats");
   $($seats).on("click", function(){
@@ -30,7 +31,9 @@ $( ".taken" ).hover(function() {
         $(this).addClass("selected");
 
         // save this seat
-        $selectedSeat = $(this).html(); 
+        $selectedSeat = $(this).html();
+        $selectedDiv = $(this);
+        console.log($selectedDiv);
     }
     // show the form when an available seat is selected
     var $form = $('form');
@@ -45,8 +48,8 @@ $($submit).on("click", function(){
     console.log($name + " " + $selectedSeat);
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
-      $(this).removeClass('selected');
-      $(this).addClass('taken');
+      $($selectedDiv).removeClass("selected").addClass('taken');
+      console.log($selectedDiv);
   });
 
 //create array, prepopulate with 3 objects
@@ -58,7 +61,7 @@ $($submit).on("click", function(){
 // $ function seatAssignment(name, seat) {
 //   // this will connect with #name and #seat1...#seat24 from form
 //     var seat12 = {
-//       this.name: name, 
+//       this.name: name,
 //       this.seat: seat
 //   };
 
