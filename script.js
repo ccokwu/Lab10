@@ -8,10 +8,18 @@ $(document).ready(function(){
     } else {
         $(this).addClass("selected");
     }
-
+    var $form = $('form');
+    $form.show();
+    
   }); // end onclick function
 
+// hide the form when loaded
+$(function() {
+	$('form').hide();
+});
+// show the form when an available seat is selected
 
+// set some of the seats to default as taken class using jQuery
 
 
 
