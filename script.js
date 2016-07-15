@@ -7,6 +7,12 @@ $(document).ready(function(){
       $(this).removeClass('selected');
     } else {
         $(this).addClass("selected");
+
+        $(this).change(function() {
+          var $selectedSeat = $(this).html();
+          console.log($selectedSeat);
+        });
+        
     }
     // show the form when an available seat is selected
     var $form = $('form');
@@ -56,25 +62,17 @@ $(function() {
 	$('form').hide();
 });
 
-
-// set some of the seats to default as 'taken' class using jQuery
-// maybe need to use object
 var $submit = $('#submit');
 $($submit).on("click", function(){
-// store user info in arry
-    var $name = document.getElementById('#name').val();
-    console.log($name);
-// change class of seat to red (div class 'seats' and id)
+// store user info in array
+    var $name = $('#name').val();
+    var $seat = $( this ).val();
+    console.log($name + $selectedSeat);
 	// var seatAssignment = $('.seats');
 	// need to set variable to id of seat selected and then use that variable below instead of 'this'
       $(this).removeClass('selected');
       $(this).addClass('taken');
   });
-// in jQuery, write a function to create a user object from the form input
-
-
-// in jQuery, write a function to update the seat assignment class when a seat is reserved
-// grab the seat number when it is selected
 
 // in jQuery, write a confirmation message that replaces the form
 
