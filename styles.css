@@ -2,16 +2,26 @@
   font-family: Helvetica, sans-serif;
 }
 
-/*navigation*/
-nav {
-  background-color: #96b5c7;
-/*get rid of bullets on list*/
 
-}
-
-body {
+html, body {
+margin: 0;
  background-color: #b4b0ba;
 }
+
+/*navigation*/
+nav {
+  background-color: grey;
+  margin-left: -20px;
+  margin-right: -50px;
+  color: white;
+}
+
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 /*our h1 title of page*/
 #title {
   font-family: 'Tillana', Courier;
@@ -30,10 +40,13 @@ body {
   height: 75px;
   margin: -5% 33% 0 33%;
 }
+
 /*this contains all the seats*/
 .allSeats {
-
+padding-left: 170px;
+padding-top: 25px;
 }
+
 /*styling for all 24 seats*/
 /*seats 2-5, 8-11, 14-17, and 20-23 are in the middle section*/
 div.seats {
@@ -43,6 +56,7 @@ div.seats {
   height: 30px;
   background-color: blue;
 }
+
 div.seats:hover {
   background-color: yellow;
 }
@@ -71,14 +85,46 @@ div.selected {
 
 /*beginning of form styling*/
 form {
-
+padding-left: 170px;
 }
+
+
+input [type=submit] {
+  text-align: center;
+  /*padding-left: 115px;*/
+  /*padding-right: 100px;*/
+}
+
+div.col-md-6 {
+  padding-left: 100px;
+}
+
+div.col-md-6 h2 {
+  padding-left: 120px;
+}
+
+div #instructions {
+  padding-left: 40px;
+}
+
+div p {
+  padding-left: 60px;
+}
+
+div ol {
+  padding-left: 80px;
+}
+
 
 footer {
   text-align: center;
-  background-color: gray;
+  background-color: black;
   color: white;
   min-height: 6em;
+  margin-top: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -20px;
 }
 
 footer p {
@@ -86,7 +132,7 @@ footer p {
 }
 
 
-#submit {
+/*#submit {
   padding: 2px 5px;
   border-radius: 15px;
   background-color: #f6cc2e;
@@ -98,7 +144,10 @@ footer p {
 
 #submit:hover {
   opacity: .8;
-}
+}*/
+
+
+
 /*end of form styling*/
 
 /*confirmation (div?) after clicking submit on form*/

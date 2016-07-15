@@ -8,19 +8,43 @@ $(document).ready(function(){
     } else {
         $(this).addClass("selected");
     }
+<<<<<<< HEAD
+=======
+
+    // show the form when an available seat is selected
     var $form = $('form');
     $form.show();
-    
+
+>>>>>>> e0402cae440e0d8b9abfbf65e6cbb57061a238a3
   }); // end onclick function
+
+// when hovering over a red seat, display a message saying the seat is taken
+
 
 // hide the form when loaded
 $(function() {
 	$('form').hide();
 });
-// show the form when an available seat is selected
 
-// set some of the seats to default as taken class using jQuery
+// set some of the seats to default as 'taken' class using jQuery
+// maybe need to use object
 
 
+// when submit button clicked, make object and change class of seat to red
+var submit = $('#submit');
 
+// in jQuery, write a function to create a user object from the form input
+
+<<<<<<< HEAD
+=======
+// in jQuery, write a function to update the seat assignment class when a seat is reserved
+// grab the seat number when it is selected
+
+// in jQuery, write a confirmation message that replaces the form
+
+// BONUS
+// =====
+// + display user info on hover
+
+>>>>>>> e0402cae440e0d8b9abfbf65e6cbb57061a238a3
 });
