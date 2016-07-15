@@ -20,6 +20,7 @@ $( ".taken" ).hover(function() {
 
   var $selectedSeat;
   var $selectedDiv;
+  var $form = $('form');
 
   var $seats = $(".seats");
   $($seats).on("click", function(){
@@ -36,7 +37,7 @@ $( ".taken" ).hover(function() {
         console.log($selectedDiv);
     }
     // show the form when an available seat is selected
-    var $form = $('form');
+
     $form.show();
   }); // end selection onclick function
 
@@ -45,11 +46,11 @@ $($submit).on("click", function(){
 // store user info in array
     var $name = $('#name').val();
     // var $seat = $( this ).val();
-    console.log($name + " " + $selectedSeat);
+
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").addClass('taken');
-      console.log($selectedDiv);
+      $form.replaceWith("<div class='message'> Thank you, we have reserved your spot</div>");
   });
 
 //create array, prepopulate with 3 objects
