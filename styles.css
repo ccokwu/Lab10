@@ -4,8 +4,8 @@
 
 
 html, body {
-margin: 0;
- background-color: #b4b0ba;
+  margin: 0;
+  background-color: #b4b0ba;
 }
 
 /*navigation*/
@@ -14,11 +14,29 @@ nav {
   margin-left: -20px;
   margin-right: -50px;
   color: white;
+  text-deocration: none;
 }
 
-
+nav li {
+  text-decoration: none;
+  list-style-type: none;
+}
 ul li a {
   color: white;
+  /*padding: 8px 0 8px 16px;*/
+}
+
+ul li a:hover {
+  text-decoration: none;
+  background-color: #555;
+  color: white;
+}
+
+ul li a:active {
+  text-decoration: none;
+}
+
+ul li a:visited {
   text-decoration: none;
 }
 
@@ -167,6 +185,7 @@ footer p {
   float: right;
   border: 1px solid black;
   padding: 1em;
+  margin-right: 180px;
 }
 
 #tinyTaken {
