@@ -8,11 +8,7 @@ $(document).ready(function(){
     } else {
         $(this).addClass("selected");
     }
-
   }); // end onclick function
-
-
-
 
 
 });

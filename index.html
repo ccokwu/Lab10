@@ -68,11 +68,22 @@
           </div>
 
           <form id="form">
-            <label for="name">Name: </label><br />
-            <input id="name" name="name" type="text" placeholder="Enter Name..."></input><br />
-            <label for="creditCard">Credit Card: </label><br />
+
+            <!-- charlie made a new form that seems a little more DRY-->
+
+            <input type="text" name="name" placeholder="Enter Name..."></input><br>
+            <input type="number" name="creditCard" placeholder="1234567812345678" maxlength="16"></input><br>
+            <input type="password" name="numberOfSeats" placeholder="No. of Seats" maxlenght="2"></input><br>
+            <input type="submit" value="Submit"></input>
+
+
+
+            <!-- <label for="name">Name: </label><br /> -->
+            <!-- <input id="name" name="name" type="text" placeholder="Enter Name..."></input><br />
+            <!<label for="creditCard">Credit Card: </label><br />
             <input id="creditCard" name="creditCard" type="number" placeholder="1234567812345678" maxlength="16"></input><br />
-            <input id="submit" name="submit" type="submit" onclick="submitFunction() return: false"></input>
+            <input id="numberOfSeats" name="numberOfSeats" type="number" placeholder="2" maxlength="2"></input><br />
+            <input id="submit" name="submit" type="submit" onclick="submitFunction() return: false"></input> -->
           </form>
         </div>
         <div class="col-md-6">
