@@ -63,10 +63,18 @@ ul li a:visited {
 .allSeats {
 padding-left: 170px;
 padding-top: 25px;
+
 }
 
 /*styling for all 24 seats*/
 /*seats 2-5, 8-11, 14-17, and 20-23 are in the middle section*/
+div.takenSeat {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
 div.seats {
   display: inline-block;
   margin: 2px;
@@ -82,7 +90,7 @@ div.seats:hover {
 /*the seats on the left that begin closer to the stage*/
 /*includes 1, 7, 13, 19*/
 div.left {
-  
+
 }
 /*the seats on the right that begin closer to the stage*/
 /*includes 6, 12, 18, 24*/

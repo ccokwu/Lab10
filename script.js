@@ -21,8 +21,11 @@ $( ".taken" ).hover(function() {
   var $selectedSeat;
   var $selectedDiv;
   var $form = $('form');
-
   var $seats = $(".seats");
+  var $personObject;
+  // var seatArray = [];
+
+
   $($seats).on("click", function(){
     if ($(this).hasClass('selected')) {
       // remove selected class
@@ -47,9 +50,16 @@ $($submit).on("click", function(){
     var $name = $('#name').val();
     // var $seat = $( this ).val();
 
+    $personObject = {
+      name: $name,
+      seatID: $selectedSeat
+    };
+
+    console.log($personObject);
+
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
-      $($selectedDiv).removeClass("selected").addClass('taken');
+      $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
       $form.replaceWith("<div class='message'> Thank you, " + $name + " we have reserved your spot seat " + $selectedSeat + "!</div>");
   });
 
