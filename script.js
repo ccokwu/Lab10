@@ -50,7 +50,7 @@ $($submit).on("click", function(){
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").addClass('taken');
-      $form.replaceWith("<div class='message'> Thank you, we have reserved your spot</div>");
+      $form.replaceWith("<div class='message'> Thank you, " + $name + " we have reserved your spot seat " + $selectedSeat + "!</div>");
   });
 
 //create array, prepopulate with 3 objects
