@@ -4,8 +4,8 @@
 
 
 html, body {
-margin: 0;
- background-color: #b4b0ba;
+  margin: 0;
+  background-color: #b4b0ba;
 }
 
 /*navigation*/
@@ -14,11 +14,20 @@ nav {
   margin-left: -20px;
   margin-right: -50px;
   color: white;
+  text-deocration: none;
 }
 
-
+nav li {
+  text-decoration: none;
+  list-style-type: none; 
+}
 ul li a {
   color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul li a:hover {
   text-decoration: none;
 }
 
