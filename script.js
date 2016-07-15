@@ -1,24 +1,53 @@
 $(document).ready(function(){
+  // hide the form when loaded
+$(function() {
+  $('form').hide();
+});
+
+// when hovering over a red seat, display a message saying the seat is taken
+// needs to be tested after submit is turning class to red
+$( ".taken" ).hover(function() {
+    $( this ).after( $( "<span>This seat is already taken</span>" ) );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+  // $($seats).click(function(){
+  //   if ()$(this).hasClass("selected")){
+  //     alert("This is already taken.");
+  //   }
+  // })
+
+  var $selectedSeat;
+
   var $seats = $(".seats");
   $($seats).on("click", function(){
-
     if ($(this).hasClass('selected')) {
       // remove selected class
       $(this).removeClass('selected');
+      // add selected class
     } else {
         $(this).addClass("selected");
 
-        $(this).change(function() {
-          var $selectedSeat = $(this).html();
-          console.log($selectedSeat);
-        });
-        
+        // save this seat
+        $selectedSeat = $(this).html(); 
     }
     // show the form when an available seat is selected
     var $form = $('form');
     $form.show();
+  }); // end selection onclick function
 
-  }); // end onclick function
+var $submit = $('#submit');
+$($submit).on("click", function(){
+// store user info in array
+    var $name = $('#name').val();
+    // var $seat = $( this ).val();
+    console.log($name + " " + $selectedSeat);
+  // var seatAssignment = $('.seats');
+  // need to set variable to id of seat selected and then use that variable below instead of 'this'
+      $(this).removeClass('selected');
+      $(this).addClass('taken');
+  });
 
 //create array, prepopulate with 3 objects
 // var $seatArray = [];
@@ -43,36 +72,7 @@ $(document).ready(function(){
 //     seat: "seat14"
 //   }
 
-
-
 // put in a few taken seats with user info
-
-//
-
-// when hovering over a red seat, display a message saying the seat is taken
-// needs to be tested after submit is turning class to red
-$( ".taken" ).hover(function() {
-    $( this ).after( $( "<span>This seat is already taken</span>" ) );
-  }, function() {
-    $( this ).find( "span:last" ).remove();
-  }
-);
-// hide the form when loaded
-$(function() {
-	$('form').hide();
-});
-
-var $submit = $('#submit');
-$($submit).on("click", function(){
-// store user info in array
-    var $name = $('#name').val();
-    var $seat = $( this ).val();
-    console.log($name + $selectedSeat);
-	// var seatAssignment = $('.seats');
-	// need to set variable to id of seat selected and then use that variable below instead of 'this'
-      $(this).removeClass('selected');
-      $(this).addClass('taken');
-  });
 
 // in jQuery, write a confirmation message that replaces the form
 
@@ -81,11 +81,7 @@ $($submit).on("click", function(){
 // + display user info on hover
 
 
-  // $($seats).click(function(){
-  //   if ()$(this).hasClass("selected")){
-  //     alert("This is already taken.");
-  //   }
-  // })
+
 
 
 
