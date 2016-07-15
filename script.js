@@ -8,19 +8,20 @@ $(document).ready(function(){
     } else {
         $(this).addClass("selected");
     }
-<<<<<<< HEAD
-=======
-
     // show the form when an available seat is selected
     var $form = $('form');
     $form.show();
 
->>>>>>> e0402cae440e0d8b9abfbf65e6cbb57061a238a3
   }); // end onclick function
 
 // when hovering over a red seat, display a message saying the seat is taken
-
-
+// needs to be tested after submit is turning class to red
+$( ".taken" ).hover(function() {
+    $( this ).after( $( "<span>This seat is already taken</span>" ) );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
 // hide the form when loaded
 $(function() {
 	$('form').hide();
@@ -35,8 +36,7 @@ var submit = $('#submit');
 
 // in jQuery, write a function to create a user object from the form input
 
-<<<<<<< HEAD
-=======
+
 // in jQuery, write a function to update the seat assignment class when a seat is reserved
 // grab the seat number when it is selected
 
@@ -46,5 +46,4 @@ var submit = $('#submit');
 // =====
 // + display user info on hover
 
->>>>>>> e0402cae440e0d8b9abfbf65e6cbb57061a238a3
 });
