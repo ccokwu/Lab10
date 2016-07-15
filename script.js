@@ -38,7 +38,7 @@ $($submit).on("click", function(){
 	// need to set variable to id of seat selected and then use that variable below instead of 'this'
       $(this).removeClass('selected');
       $(this).addClass('taken');
-  }); 
+  });
 // in jQuery, write a function to create a user object from the form input
 
 
@@ -50,5 +50,14 @@ $($submit).on("click", function(){
 // BONUS
 // =====
 // + display user info on hover
+
+
+  // $($seats).click(function(){
+  //   if ()$(this).hasClass("selected")){
+  //     alert("This is already taken.");
+  //   }
+  // })
+
+
 
 });
