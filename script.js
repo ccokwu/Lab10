@@ -44,11 +44,14 @@ $( ".taken" ).hover(function() {
     $form.show();
   }); // end selection onclick function
 
+
+
 var $submit = $('#submit');
 $($submit).on("click", function(){
 // store user info in array
     var $name = $('#name').val();
     // var $seat = $( this ).val();
+
 
     $personObject = {
       name: $name,
