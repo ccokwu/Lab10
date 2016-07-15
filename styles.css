@@ -85,7 +85,8 @@ div.selected {
 
 /*beginning of form styling*/
 form {
-padding-left: 170px;
+  padding-top: 50px;
+  padding-left: 170px;
 }
 
 
