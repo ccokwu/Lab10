@@ -107,20 +107,46 @@ footer p {
 }
 
 /*key code for the seating map includes 3 tiny boxes and descriptions*/
-#key {
-}
-#instructions {
 
+
+#instructions {
+  float: left;
 }
+
+#key {
+  float: right;
+  border: 1px solid black;
+  padding: 1em;
+}
+
 #tinyTaken {
-  width: 5px;
-  height: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+#tinyTakenDescription,
+#tinyAvailableDescription,
+#tinySelectedDescription {
+  display: inline-block;
+}
+
 #tinyAvailable {
-  width: 5px;
-  width: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #tinySelected {
-  width: 5px;
-  width: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
