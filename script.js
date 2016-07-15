@@ -29,11 +29,16 @@ $(function() {
 
 // set some of the seats to default as 'taken' class using jQuery
 // maybe need to use object
+var $submit = $('#submit');
+$($submit).on("click", function(){
+// make object
 
-
-// when submit button clicked, make object and change class of seat to red
-var submit = $('#submit');
-
+// change class of seat to red (div class 'seats' and id)
+	// var seatAssignment = $('.seats');
+	// need to set variable to id of seat selected and then use that variable below instead of 'this'
+      $(this).removeClass('selected');
+      $(this).addClass('taken');
+  }); 
 // in jQuery, write a function to create a user object from the form input
 
 
