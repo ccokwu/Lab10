@@ -145,10 +145,10 @@ div.seats {
   /*padding: 20px;*/
   width: 40px;
   height: 40px;
-  background-color: #373737;
+  background-color: white;
   opacity: 0.8;
   text-align: center;
-  color: white;
+  color: #373737;
   border-radius: 5px;
 }
 
