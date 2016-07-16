@@ -31,11 +31,17 @@ html, body {
 h1 {
   font-size: 50px;
   padding-top: 20px;
+  padding-bottom: 40px;
   font-family: 'aquino';
-  /*color: #ff1010;*/
+  color: #ff1010;
   text-shadow: 2px 1px 1px black;
   text-align: center;
+  position: relative;
+  margin-right: 450px;
 }
+
+
+
 
 
 #wrapper {
@@ -62,6 +68,11 @@ h1 {
   width: 100%;
 }
 
+#sideImg {
+  width: 95%;
+  margin-left: 5px;
+}
+
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -81,22 +92,26 @@ nav {
   margin-right: -50px;
   color: white;
   text-deocration: none;
+  list-style-type: none;
 }
 
 
 
-nav li {
+.sidebar-nav nav li {
   text-decoration: none;
   list-style-type: none;
 }
-ul li a {
+
+.sidebar-nav ul li a {
   color: white;
+  list-style-type: none;
   /*padding: 8px 0 8px 16px;*/
 }
 
-ul li a:hover {
+.sidebar-nav ul li a:hover {
   text-decoration: none;
   background-color: #555;
+  list-style-type: none;
   color: white;
 }
 
@@ -108,32 +123,12 @@ ul li a:visited {
   text-decoration: none;
 }
 
-nav img {
+.sidebar-nav img {
   width: 30%;
   margin-left: 50px;
   margin-bottom: 20px;
 }
 
-/*image above the stage*/
-#image {
-
-}
-#stage {
-  background-color: black;
-  border-radius: 0px 0px 15px 15px;
-  width: 300px;
-  height: 75px;
-}
-
-.stage {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-/*this contains all the seats*/
-.seats {
-  border-radius: 10px;
-}
 
 /*styling for all 24 seats*/
 /*seats 2-5, 8-11, 14-17, and 20-23 are in the middle section*/
@@ -150,9 +145,11 @@ div.seats {
   /*padding: 20px;*/
   width: 40px;
   height: 40px;
-  background-color: blue;
+  background-color: #373737;
+  opacity: 0.8;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 
 div.seats:hover {
@@ -191,6 +188,13 @@ form {
 }
 
 
+input [type=text] {
+  text-align: center;
+  color: black;
+  /*padding-left: 115px;*/
+  /*padding-right: 100px;*/
+}
+
 input [type=submit] {
   text-align: center;
   color: black;
@@ -212,26 +216,24 @@ button a:active {
 
 
 
-
+div.col-md-10 {
+  width: 90%;
+}
 
 div.col-md-6 {
-  padding-left: 100px;
+  /*padding-left: 100px;*/
 }
 
 div.col-md-6 h2 {
-  padding-left: 120px;
-}
-
-div #instructions {
-  padding-left: 40px;
+  margin-left: 150px;
 }
 
 div p {
-  padding-left: 60px;
+  margin-left: 150px;
 }
 
 div ol {
-  padding-left: 80px;
+  margin-left: 150px;
 }
 
 
@@ -281,15 +283,17 @@ footer p {
 /*key code for the seating map includes 3 tiny boxes and descriptions*/
 
 
-#instructions {
-  float: left;
+#instructionsWrap {
+
 }
 
 #key {
-  float: right;
-  border: 1px solid black;
-  padding: 1em;
-  margin-right: 180px;
+  border: 1px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-right: 250px;
 }
 
 #tinyTaken {
@@ -310,7 +314,7 @@ footer p {
 #tinyAvailable {
   width: 15px;
   height: 15px;
-  background-color: blue;
+  background-color: #373737;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
