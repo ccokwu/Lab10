@@ -93,6 +93,7 @@ nav {
   color: white;
   text-deocration: none;
   list-style-type: none;
+  z-index: 1;
 }
 
 
@@ -100,6 +101,7 @@ nav {
 .sidebar-nav nav li {
   text-decoration: none;
   list-style-type: none;
+  z-index: 1;
 }
 
 .sidebar-nav ul li a {
@@ -242,13 +244,13 @@ footer {
   background-color: black;
   color: white;
   min-height: 6em;
-  margin-top: 550px;
+  margin-top: 480px;
   width: 100%;
-  margin-left: -15px;
+  margin-left: 0;
   margin-right: 0;
   margin-bottom: -20px;
   bottom: 0;
-  position: absolute;
+  position: relative;
   z-index: 9999999999;
 }
 
@@ -293,7 +295,7 @@ footer p {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-right: 250px;
+  margin-right: 200px;
 }
 
 #tinyTaken {
