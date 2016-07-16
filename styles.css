@@ -139,12 +139,12 @@ div.takenSeat {
   width: 30px;
   height: 30px;
   background-color: red;
+  padding-top: 10px;
 }
 
 div.seats {
   display: inline-block;
   margin: 5px;
-  /*padding: 20px;*/
   width: 40px;
   height: 40px;
   background-color: white;
@@ -152,6 +152,7 @@ div.seats {
   text-align: center;
   color: #373737;
   border-radius: 5px;
+  padding-top: 10px;
 }
 
 div.seats:hover {
@@ -175,19 +176,20 @@ div.taken {
   background-color: red;
   display: inline-block;
   margin: 5px;
-  /*padding: 20px;*/
   width: 40px;
   height: 40px;
   text-align: center;
   border-radius: 5px;
+  padding-top: 10px;
 }
 
-div.available {
-  background-color: blue;
-}
+/*div.available {
+  background-color: white;
+}*/
 
 div.selected {
   background-color: yellow;
+  padding-top: 10px;
 }
 
 /*beginning of form styling*/
