@@ -207,7 +207,9 @@ button {
 button a:active {
   color: red;
 }
-
+#submit:active {
+  color: red;
+}
 #submit:focus {
   outline:0;
 }
