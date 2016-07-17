@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'aquino';
-  src: url("http://www.dafont.com/aquino.font");
+  src: url("http://befonts.com/aquino-font.html");
 }
 
 * {
@@ -196,6 +196,10 @@ form {
 
 form #name {
   color: black;
+}
+
+form #namegi:focus {
+  outline:0;
 }
 
 button {
