@@ -151,7 +151,7 @@ $($submit).on("click", function(){
 
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
-      $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
+      // $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
 // }; // end of for loop
 
 
@@ -159,7 +159,7 @@ $($submit).on("click", function(){
       $popUp.show();
 
       // add text to the confirmationMessage empty paragraph
-      $confirmationMessage.text("Thank you, " + $name + ". We have reserved your spot for seat " + $selectedSeat + "!")
+      $confirmationMessage.text("Thank you, " + $name + ". We have reserved the following seat(s) for you: " + $selectedSeatArr + "!")
 
       // When the pop up is clicked
       $popUp.click(function(){
