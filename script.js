@@ -75,50 +75,80 @@ $("body").append($popUp);
 
         $(this).addClass("selected");
         // save this seat
+        $selectedSeat = $(this).html();
+        console.log('the selected seat is: ' + $selectedSeat);
+        // push this seat to selectedSeatArr, so we can use this to create objects in the submit function
+        $selectedSeatArr.push($selectedSeat);
+        console.log('the selectedSeatArr is: ' + $selectedSeatArr);
+
+
 
           // add all selected seats, not just this one
 
               // do a for each div
-            $('div.selected').each(function() {
+
+  // ****** this is benson. commenting out the for each for now since this is triggered on click. if we need to loop
+  // through an array, it is probably best to do so in the submit function. otherwise, the same seat will be pushed each time
+  // a visitor clicks on another seat ********
+
+
+
+            // $('div.selected').each(function() {
               // make an element for the html and the div
-              var $htmlEl = $('div').html;
-              var $divEl = $('div');
+              // var $htmlEl = $('div').html;
+              // var $divEl = $('div');
               // push html element into selectedSeat array
-              $selectedSeatArr.push($htmlEl);
+              // $selectedSeatArr.push($htmlEl);
               // push div element into selectedDiv array
-              $selectedDivArr.push($divEl);
+              // $selectedDivArr.push($divEl);
 // console.log to show that we've got an array [first selected seat, second selected seat, ...] ditto on div
   // and it's not working yet
-              console.log($selectedSeat, $selectedDiv);
-            });
+              // console.log('selectedSeatArr: ' + $selectedSeatArr);
+              // console.log($selectedSeat, $selectedDiv);
+            // });
     // show the form when an available seat is selected
     $form.show();}
   }); // end selection onclick function
 
 var $submit = $('#submit');
 $($submit).on("click", function(){
-// store user info in array
+// grab the name from the input form and store it in a name variable. we will use this to construct a personObject.
     var $name = $('#name').val();
+
+// loop through everything in the selectedSeatArr
+    for (i = 0; i < $selectedSeatArr.length; i++) {
+      console.log('the selected seat is: ' + $selectedSeatArr[i]);
+       var $personObject = {
+        name: $name, // assign the name, which will not change regardless of number of seats
+        seatID: $selectedSeatArr[i]  // assign the seat number based on where we are in the for loop
+      }
+      $seatArray.push($personObject);
+      console.log('the seat array item we just created: ' + JSON.stringify($seatArray));
+
+    }
+
+
+
 // add object for each selected seat, not just  one
-    $personObject = {
-      name: $name,
-      seatID: $selectedSeat
-    };
-    $personObject.name = $name;
+    // $personObject = {
+    //   name: $name,
+    //   seatID: $selectedSeat
+    // };
+    // $personObject.name = $name;
 // make an object for each item in array selectedSeat with same name
-  for(i=0; i < $selectedSeatArr.length; i++) {
-    $selectedSeat = [$selectedSeatArr[i]-1];
-    $personObject.seatID = $selectedSeat;
-    // push personObject to seatArray
-    $seatArray.push($personObject);
-    // console.log($personObject.seatID);
-    console.log('person object: '+ $personObject);
-    console.log('seat array: '+ $seatArray);
+  // for(i=0; i < $selectedSeatArr.length; i++) {
+  //   $selectedSeat = [$selectedSeatArr[i]-1];
+  //   $personObject.seatID = $selectedSeat;
+  //   // push personObject to seatArray
+  //   $seatArray.push($personObject);
+  //   // console.log($personObject.seatID);
+  //   console.log('person object: '+ $personObject);
+  //   console.log('seat array: '+ $seatArray);
 
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
-}; // end of for loop
+// }; // end of for loop
 
 
       // show the pop-up window
