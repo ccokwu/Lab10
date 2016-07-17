@@ -20,7 +20,7 @@ $( ".taken" ).hover(function() {
     }
 
   ];
-  $($(seat1)).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
+  $($(seat1)).removeClass("selected").addClass('takenSeat').addClass('taken');
 
 
   var $selectedSeat;
