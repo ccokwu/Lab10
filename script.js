@@ -7,9 +7,9 @@ $(function() {
 // when hovering over a red seat, display a message saying the seat is taken
 // needs to be tested after submit is turning class to red
 $( ".taken" ).hover(function() {
-    $( this ).after( $( "<span>This seat is already taken</span>" ) );
+    $(this).after( $( "<span>This seat is already reserved. Please select another one.</span>" ) );
   }, function() {
-    $( this ).find( "span:last" ).remove();
+    $(this).find( "span:last" ).remove();
   }
 );
 
@@ -47,7 +47,7 @@ $popUp.append($popUpButton);
 // Using jQuery, create the popUp after document loads -- will show it later
 $("body").append($popUp);
 
-// add kepress to also trigger the following function
+// add keypress to also trigger the following function
 // $($'#name').keypress();
 
   $($seats).on("click", function(){
@@ -118,7 +118,7 @@ $($submit).on("click", function(){
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
-} // end of for loop 
+}; // end of for loop
 
 
       // show the pop-up window
