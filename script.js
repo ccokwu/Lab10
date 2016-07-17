@@ -17,13 +17,32 @@ $( ".taken" ).hover(function() {
   //     alert("This is already taken.");
   //   }
   // })
+  var $seatArray = [
+    {
+      name: 'Jeseekia',
+      seatID: 1
+    }
+
+  ];
+  $($(seat1)).addClass("taken");
+
 
   var $selectedSeat;
   var $selectedDiv;
   var $form = $('form');
   var $seats = $(".seats");
   var $personObject;
-  // var seatArray = [];
+  var $popUp = $('<div id="popUp"></div>');  // used for confirmation message background
+  var $confirmationMessage = $("<p></p>");  // used for confirmation message container
+
+// Create an empty paragraph on the pop up
+$popUp.append($confirmationMessage);
+
+// Using jQuery, create the popUp after document loads -- will show it later
+$("body").append($popUp);
+
+
+
 
 
   $($seats).on("click", function(){
@@ -31,6 +50,10 @@ $( ".taken" ).hover(function() {
       // remove selected class
       $(this).removeClass('selected');
       // add selected class
+    } else if ($(this).hasClass('taken')) {
+      // display an error message if red
+        alert('Sorry, this seat is reserved. Please select a different seat.');
+
     } else {
         $(this).addClass("selected");
 
@@ -57,13 +80,34 @@ $($submit).on("click", function(){
       name: $name,
       seatID: $selectedSeat
     };
-
+    // $seatArray[$selectedSeat-1] = {$name, $selectedSeat};
+    $personObject.name = $name;
     console.log($personObject);
+    // push personObject to seatArray
+    $seatArray.push($personObject);
+    // console.log($personObject.seatID);
+    console.log('person object: '+ $personObject);
+    console.log('seat array: '+ $seatArray);
+
 
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
-      $form.replaceWith("<div class='message'> Thank you, " + $name + ". We have reserved your spot for seat " + $selectedSeat + "!</div>");
+
+      // show the pop-up window
+      $popUp.show();
+
+      // add text to the confirmationMessage empty paragraph
+      $confirmationMessage.text("Thank you, " + $name + ". We have reserved your spot for seat " + $selectedSeat + "!")
+
+      // When the pop up is clicked
+      $popUp.click(function(){
+        //Hide the pop up
+        $popUp.hide();
+      });
+
+      // preserving the next line down for historical purposes -- in the process of using a pop up instead
+      // $form.replaceWith("<div class='message'> Thank you, " + $name + ". We have reserved your spot for seat " + $selectedSeat + "!</div>");
   });
 
 //create array, prepopulate with 3 objects
