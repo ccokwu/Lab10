@@ -4,6 +4,14 @@ $(function() {
   $('form').hide();
 });
 
+// prevent the Enter key from submitting the form. 
+$('#name').keypress(function(event){
+
+    if (event.keyCode === 10 || event.keyCode === 13)
+        event.preventDefault();
+
+  });
+
 // when hovering over a red seat, display a message saying the seat is taken
 // needs to be tested after submit is turning class to red
 $( ".taken" ).hover(function() {
@@ -160,7 +168,7 @@ $($submit).on("click", function(){
 
       // add text to the confirmationMessage empty paragraph
       $confirmationMessage.text("Thank you, " + $name + ". We have reserved the following seat(s) for you: " + $selectedSeatArr + "!");
-      $selectedSeatArr = []; // clear out the selectedSeatArr, so if the user makes an additional purchase it won't return previously bought seats 
+      $selectedSeatArr = []; // clear out the selectedSeatArr, so if the user makes an additional purchase it won't return previously bought seats
 
       // When the pop up is clicked
       $popUp.click(function(){
