@@ -4,7 +4,7 @@ $(function() {
   $('form').hide();
 });
 
-// prevent the Enter key from submitting the form. 
+// prevent the Enter key from submitting the form.
 $('#name').keypress(function(event){
 
     if (event.keyCode === 10 || event.keyCode === 13)
@@ -14,12 +14,12 @@ $('#name').keypress(function(event){
 
 // when hovering over a red seat, display a message saying the seat is taken
 // needs to be tested after submit is turning class to red
-$( ".taken" ).hover(function() {
-    $(this).after( $( "<span>This seat is already reserved. Please select another one.</span>" ) );
-  }, function() {
-    $(this).find( "span:last" ).remove();
-  }
-);
+// $( ".taken" ).hover(function() {
+//     $(this).after( $( "<span>This seat is already reserved. Please select another one.</span>" ) );
+//   }, function() {
+//     $(this).find( "span:last" ).remove();
+//   }
+// );
 
   var $seatArray = [
     {
@@ -183,6 +183,13 @@ $($submit).on("click", function(){
 // =====
 // + display user info on hover
 
+// this is not working, but it's a start to at least get the mouse enter/leave to display the message
+// $(".seats").mouseenter(function(){
+//   console.log($seatArray.name);
+//   $(this).append( "<div>This seat belongs to:" + $seatArray[0].name + "</div>" );
+// }).mouseleave(function(){
+//   $(this).find("div:last").remove();
+// });
 
 
 
