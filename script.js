@@ -12,11 +12,7 @@ $( ".taken" ).hover(function() {
     $( this ).find( "span:last" ).remove();
   }
 );
-  // $($seats).click(function(){
-  //   if ()$(this).hasClass("selected")){
-  //     alert("This is already taken.");
-  //   }
-  // })
+
   var $seatArray = [
     {
       name: 'Jeseekia',
@@ -24,7 +20,7 @@ $( ".taken" ).hover(function() {
     }
 
   ];
-  $($(seat1)).addClass("taken");
+  $($(seat1)).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
 
 
   var $selectedSeat;
@@ -44,9 +40,6 @@ $popUp.append($popUpButton);
 
 // Using jQuery, create the popUp after document loads -- will show it later
 $("body").append($popUp);
-
-
-
 
 
   $($seats).on("click", function(){
