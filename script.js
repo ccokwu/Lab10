@@ -21,7 +21,7 @@ $( ".taken" ).hover(function() {
 
   ];
   $($(seat1)).removeClass("selected").addClass('takenSeat').addClass('taken');
-
+//Charlie: asking why the .addClass("takenSeat") in line 23 is necessary? i removed it //and it didnt change anything. Just asking.
 
   var $selectedSeat;
   var $selectedDiv;
