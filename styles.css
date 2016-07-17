@@ -181,6 +181,7 @@ div.taken {
   text-align: center;
   border-radius: 5px;
   padding-top: 10px;
+  color: white;
 }
 
 /*div.available {
@@ -209,6 +210,10 @@ button {
 
 button a:active {
   color: red;
+}
+
+#submit:focus {
+  outline:0;
 }
 
 
@@ -335,4 +340,11 @@ footer p {
 #popUp button {
   position: relative;
   top: 175px;
+  width: 70px;
+  height: 40px;
+}
+
+
+#popUp button:focus {
+  outline:0;
 }
