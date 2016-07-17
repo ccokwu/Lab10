@@ -34,9 +34,13 @@ $( ".taken" ).hover(function() {
   var $personObject;
   var $popUp = $('<div id="popUp"></div>');  // used for confirmation message background
   var $confirmationMessage = $("<p></p>");  // used for confirmation message container
+  var $popUpButton = $("<button>OK</button>"); // button to encourage people to click the popup to dismiss
 
 // Create an empty paragraph on the pop up
 $popUp.append($confirmationMessage);
+
+// Create a button on the pop up
+$popUp.append($popUpButton);
 
 // Using jQuery, create the popUp after document loads -- will show it later
 $("body").append($popUp);

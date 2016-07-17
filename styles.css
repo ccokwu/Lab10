@@ -331,3 +331,8 @@ footer p {
   top: 120px;
   margin: 0px;
 }
+
+#popUp button {
+  position: relative;
+  top: 175px;
+}
