@@ -122,8 +122,12 @@ $($submit).on("click", function(){
         name: $name, // assign the name, which will not change regardless of number of seats
         seatID: $selectedSeatArr[i]  // assign the seat number based on where we are in the for loop
       }
+      // add this newly created object to the array
       $seatArray.push($personObject);
       console.log('the seat array item we just created: ' + JSON.stringify($seatArray));
+
+      // change selected seats to taken
+      $( "div" ).find( ".selected" ).removeClass('selected').addClass('taken');
 
     }
 
