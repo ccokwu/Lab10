@@ -56,7 +56,18 @@ $("body").append($popUp);
       // add selected class
     } else if ($(this).hasClass('taken')) {
       // display an error message if red
-        alert('Sorry, this seat is reserved. Please select a different seat.');
+      // show the pop-up window
+      $popUp.show();
+      // add text to the confirmationMessage empty paragraph
+      $confirmationMessage.text("Sorry, this seat is taken. Please select a different seat.")
+
+      // When the pop up is clicked
+      $popUp.click(function(){
+        //Hide the pop up
+        $popUp.hide();
+      });
+
+        // alert('Sorry, this seat is reserved. Please select a different seat.');
 
     } else {
         $(this).addClass("selected");
