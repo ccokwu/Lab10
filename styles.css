@@ -198,7 +198,7 @@ form #name {
   color: black;
 }
 
-form #namegi:focus {
+form #name:focus {
   outline:0;
 }
 
@@ -352,4 +352,417 @@ footer p {
 
 #popUp button:focus {
   outline:0;
+}
+
+
+
+
+
+@media (max-width: 1277px) {
+  body {
+
+  }
+  div.col-md-6 h2{
+    margin-top: -40px;
+  }
+  #key {
+    margin-right: 108px;
+  }
+}
+
+@media (max-width: 1276px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 1262px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 139px;
+  }
+}
+
+@media (max-width: 1259px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 130px;
+  }
+}
+
+@media (max-width: 1239px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 125px;
+  }
+}
+
+@media (max-width: 1228px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-top: -50px;
+  }
+
+  #key {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 1217px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+  }
+}
+
+@media (max-width: 1215px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1197px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 99px;
+  }
+}
+
+@media (max-width: 1195px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 98px;
+  }
+}
+
+@media (max-width: 1193px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 97px;
+  }
+}
+
+@media (max-width: 1191px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 96px;
+  }
+}
+
+@media (max-width: 1188px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 97px;
+  }
+}
+
+@media (max-width: 1186px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 94px;
+  }
+}
+
+
+@media (max-width: 1184px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 90px;
+  }
+}
+
+
+@media (max-width: 1175px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 89px;
+  }
+}
+
+@media (max-width: 1173px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 88px;
+  }
+}
+
+@media (max-width: 1171px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 87px;
+  }
+}
+
+@media (max-width: 1168px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 86px;
+  }
+}
+
+@media (max-width: 1166px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 85px;
+  }
+}
+
+@media (max-width: 1164px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 84px;
+  }
+}
+
+@media (max-width: 1162px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 83px;
+  }
+}
+
+
+@media (max-width: 1159px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 82px;
+  }
+}
+
+@media (max-width: 1157px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 1154px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 75px;
+  }
+}
+
+@media (max-width: 1142px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 70px;
+  }
+}
+
+
+@media (max-width: 1131px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 68px;
+  }
+}
+
+
+@media (max-width: 1127px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 149px;
+  }
+}
+
+@media (max-width: 1126px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 119px;
+    margin-right: 65px;
+  }
+}
+
+@media (max-width: 1125px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 145px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body {
+
+  }
+
+  #key {
+    margin-left: 125px;
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 1116px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 144px;
+  }
+}
+
+@media (max-width: 1114px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 1111px) {
+  body {
+
+  }
+  /*h1 #title{
+    margin-right: 445px;
+  }*/
+  #instructions {
+    margin-right: -90px;
+  }
+  #key {
+    margin-left: 125px;
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 1088px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 130px;
+  }
+
+  #key {
+    margin-left: 125px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 1077px) {
+  body {
+
+  }
+
+  div.col-md-6 h2{
+    margin-left: 127px;
+  }
+
+  #key {
+    margin-left: 125px;
+    margin-right: 35px;
+  }
 }
