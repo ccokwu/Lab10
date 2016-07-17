@@ -159,7 +159,8 @@ $($submit).on("click", function(){
       $popUp.show();
 
       // add text to the confirmationMessage empty paragraph
-      $confirmationMessage.text("Thank you, " + $name + ". We have reserved the following seat(s) for you: " + $selectedSeatArr + "!")
+      $confirmationMessage.text("Thank you, " + $name + ". We have reserved the following seat(s) for you: " + $selectedSeatArr + "!");
+      $selectedSeatArr = []; // clear out the selectedSeatArr, so if the user makes an additional purchase it won't return previously bought seats 
 
       // When the pop up is clicked
       $popUp.click(function(){
