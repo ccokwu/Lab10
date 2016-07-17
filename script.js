@@ -25,6 +25,12 @@ $( ".taken" ).hover(function() {
 
   var $selectedSeat;
   var $selectedDiv;
+
+  // make an array of selected seats
+  var $selectedSeatArr = [];
+  // and an array of the divs
+  var $selectedDivArr = [];
+
   var $form = $('form');
   var $seats = $(".seats");
   var $personObject;
@@ -41,8 +47,11 @@ $popUp.append($popUpButton);
 // Using jQuery, create the popUp after document loads -- will show it later
 $("body").append($popUp);
 
+// add kepress to also trigger the following function
+// $($'#name').keypress();
 
   $($seats).on("click", function(){
+
     if ($(this).hasClass('selected')) {
       // remove selected class
       $(this).removeClass('selected');
@@ -58,49 +67,59 @@ $("body").append($popUp);
       $popUp.click(function(){
         //Hide the pop up
         $popUp.hide();
-      });
+      }); //closing pop up function
 
         // alert('Sorry, this seat is reserved. Please select a different seat.');
 
     } else {
+
         $(this).addClass("selected");
-
         // save this seat
-        $selectedSeat = $(this).html();
-        $selectedDiv = $(this);
-        console.log($selectedDiv);
-    }
+
+          // add all selected seats, not just this one
+
+              // do a for each div
+            $('div.selected').each(function() {
+              // make an element for the html and the div
+              var $htmlEl = $('div').html;
+              var $divEl = $('div');
+              // push html element into selectedSeat array
+              $selectedSeatArr.push($htmlEl);
+              // push div element into selectedDiv array
+              $selectedDivArr.push($divEl);
+// console.log to show that we've got an array [first selected seat, second selected seat, ...] ditto on div
+  // and it's not working yet
+              console.log($selectedSeat, $selectedDiv);
+            });
     // show the form when an available seat is selected
-
-    $form.show();
+    $form.show();}
   }); // end selection onclick function
-
-
 
 var $submit = $('#submit');
 $($submit).on("click", function(){
 // store user info in array
     var $name = $('#name').val();
-    // var $seat = $( this ).val();
-
-
+// add object for each selected seat, not just  one
     $personObject = {
       name: $name,
       seatID: $selectedSeat
     };
-    // $seatArray[$selectedSeat-1] = {$name, $selectedSeat};
     $personObject.name = $name;
-    console.log($personObject);
+// make an object for each item in array selectedSeat with same name
+  for(i=0; i < $selectedSeatArr.length; i++) {
+    $selectedSeat = [$selectedSeatArr[i]-1];
+    $personObject.seatID = $selectedSeat;
     // push personObject to seatArray
     $seatArray.push($personObject);
     // console.log($personObject.seatID);
     console.log('person object: '+ $personObject);
     console.log('seat array: '+ $seatArray);
 
-
   // var seatAssignment = $('.seats');
   // need to set variable to id of seat selected and then use that variable below instead of 'this'
       $($selectedDiv).removeClass("selected").removeClass('seats').addClass('takenSeat').addClass('taken');
+} // end of for loop 
+
 
       // show the pop-up window
       $popUp.show();
@@ -117,34 +136,6 @@ $($submit).on("click", function(){
       // preserving the next line down for historical purposes -- in the process of using a pop up instead
       // $form.replaceWith("<div class='message'> Thank you, " + $name + ". We have reserved your spot for seat " + $selectedSeat + "!</div>");
   });
-
-//create array, prepopulate with 3 objects
-// var $seatArray = [];
-
-// $seatArray[12] = {
-//   name:
-// };
-// $ function seatAssignment(name, seat) {
-//   // this will connect with #name and #seat1...#seat24 from form
-//     var seat12 = {
-//       this.name: name,
-//       this.seat: seat
-//   };
-
-// seatAssignment(Benson, seat13);
-//   {
-//     name: "Benson",
-//     seat: "seat13"
-//   };
-//   {
-//     name: "Karen",
-//     seat: "seat14"
-//   }
-
-// put in a few taken seats with user info
-
-// in jQuery, write a confirmation message that replaces the form
-
 // BONUS
 // =====
 // + display user info on hover
