@@ -568,6 +568,9 @@ footer p {
 }
 
 @media (max-width: 1182px) {
+  form {
+    margin-left: 105px;
+  }
   footer {
     margin-top: 395px;
   }
@@ -684,13 +687,13 @@ footer p {
 }
 
 @media (max-width: 1154px) {
-  body {
-
-  }
 
   #key {
     margin-left: 119px;
     margin-right: 75px;
+  }
+  form {
+    margin-left: 90px;
   }
 }
 
@@ -818,7 +821,19 @@ footer p {
   div.col-md-6 h2 {
     margin-left: 130px;
   }
+  form {
+    margin-left: 80px;
+  }
 }
+
+@media (max-width: 1094px) {
+  #popUp {
+    width: 370px;
+    top: 160px;
+    display: none;
+  }
+}
+
 
 @media (max-width: 1088px) {
   body {
@@ -906,6 +921,9 @@ footer p {
     margin-left: 115px;
   }
 
+  form {
+    margin-left: 70px;
+  }
 }
 
 @media (max-width: 1055px) {
@@ -1023,6 +1041,10 @@ footer p {
     margin-left: 125px;
     margin-right: 0;
   }
+
+  form {
+    margin-left: 60px;
+  }
 }
 
 @media (max-width: 1010px) {
@@ -1037,7 +1059,7 @@ footer p {
   }
 }
 
-/*This is where the seats begin to break form.*/
+/*This is where the seats begin to break form and the pop up gets in the way.*/
 @media (max-width: 991px) {
   body {
 
