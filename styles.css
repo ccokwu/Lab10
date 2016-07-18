@@ -1043,7 +1043,7 @@ footer p {
   }
 
   form {
-    margin-left: 60px;
+    margin-left: 60px;gi
   }
 }
 
@@ -1064,13 +1064,15 @@ footer p {
   body {
 
   }
-  /*div.col-md-6 h2{
-    margin-left: 100px;
-    margin-right: -50px
+  div.col-md-6 h2{
+    margin-top: 170px;
+    margin-left: -200px;
+    margin-right: 40px
   }
 
   #key {
-    margin-left: 125px;
-    margin-right: 5px;
-  }*/
+    margin-top: -170px;
+    margin-left: 3750px;
+    margin-right: -190;
+  }
 }
